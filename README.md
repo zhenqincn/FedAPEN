@@ -1,5 +1,5 @@
 # README
-This repository contains the source code of experiments introduced in the paper entitled with **FedAPEN: Personalized Cross-silo Federated Learning with Adaptability to Statistical Heterogeneity**, which is accepted by **ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD), 2023**.
+This repository contains the source code of experiments introduced in the paper entitled with [FedAPEN: Personalized Cross-silo Federated Learning with Adaptability to Statistical Heterogeneity](https://dl.acm.org/doi/10.1145/3580305.3599344), which is accepted by **ACM SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD), 2023**.
 
 `FedAPEN`, `FedEN`, `FML-AE`, `FML-EE`, `APFL`, `FML(Sha)`, `FML(Pri)`, `FedAvg-FT`, `FedAvg` and `Individual` can be conducted by running `main.py` with different value of `algorithm` argument. 
 + `FedAPEN`: `python main.py --algorithm "learned_adaptive_training" ...`, where the records of accuracy can be revealed by `tools/plot_utils.py` with the name of `FedAPEN`.
