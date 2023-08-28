@@ -53,7 +53,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', '-d', default='cifar-10', type=str, help='the name of dataset')
     parser.add_argument('--download', default=False, action='store_true', help='whether download the corresponding dataset if it does not exists')
     parser.add_argument('--num_classes', default=100, type=int, help='num classes')
-    parser.add_argument('--iid', default="0", choice=['0', '2', '4', '6', '8', 'dir0.05', 'dir0.1', 'dir0.5', 'dir1.0', 'dir5.0'], type=str, help='the type of data non-iid, number means pathological non-IID with alpha=iid / 10, note that 0 means iid (alpha=1.0), if set to "dir{iid}", meaning practical non-iid with alpha=iid')
+    parser.add_argument('--iid', default="0", choices=['0', '2', '4', '6', '8', 'dir0.05', 'dir0.1', 'dir0.5', 'dir1.0', 'dir5.0'], type=str, help='the type of data non-iid, number means pathological non-IID with alpha=iid / 10, note that 0 means iid (alpha=1.0), if set to "dir{iid}", meaning practical non-iid with alpha=iid')
     parser.add_argument('--ratio_train_adaptability', default='[0.95, 0.05]', type=str, help='the ratio of training set, validation set')
     parser.add_argument('--batch', '-b', default=64, type=int, help='batch size of local training')
 
